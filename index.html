@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+
+  <!--
+  This file is part of Burnout Inventory.
+
+  Burnout Inventory is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Burnout Inventory is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Burnout Inventory.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+
+      <!-- HEADER -->
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- TITLE -->
+          <span class="mdl-layout-title"><span class="app-title"></span></span>
+        </div>
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+          <a href="#intro" class="mdl-layout__tab is-active">Introduction</a>
+          <a href="#sectA" class="mdl-layout__tab">Section A</a>
+          <a href="#sectB" class="mdl-layout__tab">Section B</a>
+          <a href="#sectC" class="mdl-layout__tab">Section C</a>
+          <a href="#result" class="mdl-layout__tab">Results</a>
+        </div>
+      </header>
+
+      <!-- DRAWER -->
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><span class="app-title"></span></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link about-app" href=""></a>
+          <a class="mdl-navigation__link about-version" href=""></a>
+          <a class="mdl-navigation__link about-license" href=""></a>
+        </nav>
+      </div>
+
+      <!-- MAIN -->
+      <main class="mdl-layout__content">
+
+        <!-- INTRO -->
+        <section class=" mdl-layout__tab-panel is-active" id="intro">
+          <div class="page-content">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet cell-center">
+                <div class="form mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Introduction</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>
+                      The Maslach Burnout Inventory (MBI) is the most commonly used tool to self-assess whether you might be at risk of burnout. To determine the risk of burnout, the MBI explores three components: exhaustion, depersonalization and personal achievement. While this tool may be useful, it must not be used as a scientific diagnostic technique, regardless of the results. The objective is simply to make you aware that anyone may be at risk of burnout.
+                    </p>
+                    <p>
+                      For each question, indicate the score that corresponds to your response. The system will add them up and give you feedback.
+                    </p>
+                    <div id="note" class="icon material-icons">info_outline</div>
+                    <div class="mdl-tooltip mdl-tooltip--right" for="note">
+                      Fill every tab above before running the calculation!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION A -->
+        <section class=" mdl-layout__tab-panel" id="sectA">
+          <div class="page-content">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet cell-center">
+                <div class="form mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Section A</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h4><i class="material-icons">filter_1</i>  I feel emotionally drained by my work.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A1_0">
+  <input type="radio" id="A1_0" class="mdl-radio__button" name="A1" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A1_1">
+  <input type="radio" id="A1_1" class="mdl-radio__button" name="A1" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A1_2">
+  <input type="radio" id="A1_2" class="mdl-radio__button" name="A1" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A1_3">
+  <input type="radio" id="A1_3" class="mdl-radio__button" name="A1" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A1_4">
+  <input type="radio" id="A1_4" class="mdl-radio__button" name="A1" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A1_5">
+  <input type="radio" id="A1_5" class="mdl-radio__button" name="A1" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A1_6">
+  <input type="radio" id="A1_6" class="mdl-radio__button" name="A1" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_2</i>  Working with people all day long requires a great deal of effort.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A2_0">
+  <input type="radio" id="A2_0" class="mdl-radio__button" name="A2" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A2_1">
+  <input type="radio" id="A2_1" class="mdl-radio__button" name="A2" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A2_2">
+  <input type="radio" id="A2_2" class="mdl-radio__button" name="A2" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A2_3">
+  <input type="radio" id="A2_3" class="mdl-radio__button" name="A2" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A2_4">
+  <input type="radio" id="A2_4" class="mdl-radio__button" name="A2" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A2_5">
+  <input type="radio" id="A2_5" class="mdl-radio__button" name="A2" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A2_6">
+  <input type="radio" id="A2_6" class="mdl-radio__button" name="A2" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_3</i>  I feel like my work is breaking me down.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A3_0">
+  <input type="radio" id="A3_0" class="mdl-radio__button" name="A3" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A3_1">
+  <input type="radio" id="A3_1" class="mdl-radio__button" name="A3" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A3_2">
+  <input type="radio" id="A3_2" class="mdl-radio__button" name="A3" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A3_3">
+  <input type="radio" id="A3_3" class="mdl-radio__button" name="A3" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A3_4">
+  <input type="radio" id="A3_4" class="mdl-radio__button" name="A3" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A3_5">
+  <input type="radio" id="A3_5" class="mdl-radio__button" name="A3" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A3_6">
+  <input type="radio" id="A3_6" class="mdl-radio__button" name="A3" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_4</i>  I feel frustrated by my work.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A4_0">
+  <input type="radio" id="A4_0" class="mdl-radio__button" name="A4" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A4_1">
+  <input type="radio" id="A4_1" class="mdl-radio__button" name="A4" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A4_2">
+  <input type="radio" id="A4_2" class="mdl-radio__button" name="A4" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A4_3">
+  <input type="radio" id="A4_3" class="mdl-radio__button" name="A4" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A4_4">
+  <input type="radio" id="A4_4" class="mdl-radio__button" name="A4" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A4_5">
+  <input type="radio" id="A4_5" class="mdl-radio__button" name="A4" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A4_6">
+  <input type="radio" id="A4_6" class="mdl-radio__button" name="A4" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_5</i>  I feel I work too hard at my job.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A5_0">
+  <input type="radio" id="A5_0" class="mdl-radio__button" name="A5" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A5_1">
+  <input type="radio" id="A5_1" class="mdl-radio__button" name="A5" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A5_2">
+  <input type="radio" id="A5_2" class="mdl-radio__button" name="A5" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A5_3">
+  <input type="radio" id="A5_3" class="mdl-radio__button" name="A5" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A5_4">
+  <input type="radio" id="A5_4" class="mdl-radio__button" name="A5" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A5_5">
+  <input type="radio" id="A5_5" class="mdl-radio__button" name="A5" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A5_6">
+  <input type="radio" id="A5_6" class="mdl-radio__button" name="A5" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_6</i>  It stresses me too much to work in direct contact with people.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A6_0">
+  <input type="radio" id="A6_0" class="mdl-radio__button" name="A6" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A6_1">
+  <input type="radio" id="A6_1" class="mdl-radio__button" name="A6" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A6_2">
+  <input type="radio" id="A6_2" class="mdl-radio__button" name="A6" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A6_3">
+  <input type="radio" id="A6_3" class="mdl-radio__button" name="A6" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A6_4">
+  <input type="radio" id="A6_4" class="mdl-radio__button" name="A6" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A6_5">
+  <input type="radio" id="A6_5" class="mdl-radio__button" name="A6" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A6_6">
+  <input type="radio" id="A6_6" class="mdl-radio__button" name="A6" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_7</i>  I feel like I'm at the end of my rope.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A7_0">
+  <input type="radio" id="A7_0" class="mdl-radio__button" name="A7" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A7_1">
+  <input type="radio" id="A7_1" class="mdl-radio__button" name="A7" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A7_2">
+  <input type="radio" id="A7_2" class="mdl-radio__button" name="A7" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A7_3">
+  <input type="radio" id="A7_3" class="mdl-radio__button" name="A7" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A7_4">
+  <input type="radio" id="A7_4" class="mdl-radio__button" name="A7" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A7_5">
+  <input type="radio" id="A7_5" class="mdl-radio__button" name="A7" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="A7_6">
+  <input type="radio" id="A7_6" class="mdl-radio__button" name="A7" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION B -->
+        <section class="mdl-layout__tab-panel" id="sectB">
+          <div class="page-content">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet cell-center">
+                <div class="form mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Section B</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h4><i class="material-icons">filter_1</i>  I feel I look after certain patients/clients impersonally, as if they are objects.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B1_0">
+  <input type="radio" id="B1_0" class="mdl-radio__button" name="B1" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B1_1">
+  <input type="radio" id="B1_1" class="mdl-radio__button" name="B1" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B1_2">
+  <input type="radio" id="B1_2" class="mdl-radio__button" name="B1" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B1_3">
+  <input type="radio" id="B1_3" class="mdl-radio__button" name="B1" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B1_4">
+  <input type="radio" id="B1_4" class="mdl-radio__button" name="B1" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B1_5">
+  <input type="radio" id="B1_5" class="mdl-radio__button" name="B1" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B1_6">
+  <input type="radio" id="B1_6" class="mdl-radio__button" name="B1" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_2</i>  I feel tired when I get up in the</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B2_0">
+  <input type="radio" id="B2_0" class="mdl-radio__button" name="B2" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B2_1">
+  <input type="radio" id="B2_1" class="mdl-radio__button" name="B2" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B2_2">
+  <input type="radio" id="B2_2" class="mdl-radio__button" name="B2" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B2_3">
+  <input type="radio" id="B2_3" class="mdl-radio__button" name="B2" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B2_4">
+  <input type="radio" id="B2_4" class="mdl-radio__button" name="B2" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B2_5">
+  <input type="radio" id="B2_5" class="mdl-radio__button" name="B2" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B2_6">
+  <input type="radio" id="B2_6" class="mdl-radio__button" name="B2" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_3</i>  morning and have to face another day at work.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B3_0">
+  <input type="radio" id="B3_0" class="mdl-radio__button" name="B3" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B3_1">
+  <input type="radio" id="B3_1" class="mdl-radio__button" name="B3" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B3_2">
+  <input type="radio" id="B3_2" class="mdl-radio__button" name="B3" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B3_3">
+  <input type="radio" id="B3_3" class="mdl-radio__button" name="B3" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B3_4">
+  <input type="radio" id="B3_4" class="mdl-radio__button" name="B3" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B3_5">
+  <input type="radio" id="B3_5" class="mdl-radio__button" name="B3" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B3_6">
+  <input type="radio" id="B3_6" class="mdl-radio__button" name="B3" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_4</i>  I have the impression that my patients/clients make me responsible for some of their problems.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B4_0">
+  <input type="radio" id="B4_0" class="mdl-radio__button" name="B4" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B4_1">
+  <input type="radio" id="B4_1" class="mdl-radio__button" name="B4" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B4_2">
+  <input type="radio" id="B4_2" class="mdl-radio__button" name="B4" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B4_3">
+  <input type="radio" id="B4_3" class="mdl-radio__button" name="B4" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B4_4">
+  <input type="radio" id="B4_4" class="mdl-radio__button" name="B4" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B4_5">
+  <input type="radio" id="B4_5" class="mdl-radio__button" name="B4" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B4_6">
+  <input type="radio" id="B4_6" class="mdl-radio__button" name="B4" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_5</i>  I am at the end of my patience at the end of my work day.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B5_0">
+  <input type="radio" id="B5_0" class="mdl-radio__button" name="B5" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B5_1">
+  <input type="radio" id="B5_1" class="mdl-radio__button" name="B5" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B5_2">
+  <input type="radio" id="B5_2" class="mdl-radio__button" name="B5" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B5_3">
+  <input type="radio" id="B5_3" class="mdl-radio__button" name="B5" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B5_4">
+  <input type="radio" id="B5_4" class="mdl-radio__button" name="B5" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B5_5">
+  <input type="radio" id="B5_5" class="mdl-radio__button" name="B5" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B5_6">
+  <input type="radio" id="B5_6" class="mdl-radio__button" name="B5" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_6</i>  I really don't care about what happens to some of my patients/clients.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B6_0">
+  <input type="radio" id="B6_0" class="mdl-radio__button" name="B6" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B6_1">
+  <input type="radio" id="B6_1" class="mdl-radio__button" name="B6" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B6_2">
+  <input type="radio" id="B6_2" class="mdl-radio__button" name="B6" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B6_3">
+  <input type="radio" id="B6_3" class="mdl-radio__button" name="B6" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B6_4">
+  <input type="radio" id="B6_4" class="mdl-radio__button" name="B6" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B6_5">
+  <input type="radio" id="B6_5" class="mdl-radio__button" name="B6" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B6_6">
+  <input type="radio" id="B6_6" class="mdl-radio__button" name="B6" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_7</i>  I have become more insensitive to people since I've been working.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B7_0">
+  <input type="radio" id="B7_0" class="mdl-radio__button" name="B7" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B7_1">
+  <input type="radio" id="B7_1" class="mdl-radio__button" name="B7" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B7_2">
+  <input type="radio" id="B7_2" class="mdl-radio__button" name="B7" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B7_3">
+  <input type="radio" id="B7_3" class="mdl-radio__button" name="B7" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B7_4">
+  <input type="radio" id="B7_4" class="mdl-radio__button" name="B7" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B7_5">
+  <input type="radio" id="B7_5" class="mdl-radio__button" name="B7" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B7_6">
+  <input type="radio" id="B7_6" class="mdl-radio__button" name="B7" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_8</i>  I'm afraid that this job is making me uncaring.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B8_0">
+  <input type="radio" id="B8_0" class="mdl-radio__button" name="B8" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B8_1">
+  <input type="radio" id="B8_1" class="mdl-radio__button" name="B8" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B8_2">
+  <input type="radio" id="B8_2" class="mdl-radio__button" name="B8" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B8_3">
+  <input type="radio" id="B8_3" class="mdl-radio__button" name="B8" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B8_4">
+  <input type="radio" id="B8_4" class="mdl-radio__button" name="B8" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B8_5">
+  <input type="radio" id="B8_5" class="mdl-radio__button" name="B8" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="B8_6">
+  <input type="radio" id="B8_6" class="mdl-radio__button" name="B8" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION C -->
+        <section class=" mdl-layout__tab-panel" id="sectC">
+          <div class="page-content">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet cell-center">
+                <div class="form mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Section C</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h4><i class="material-icons">filter_1</i>  I accomplish many worthwhile things in this job.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C1_0">
+  <input type="radio" id="C1_0" class="mdl-radio__button" name="C1" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C1_1">
+  <input type="radio" id="C1_1" class="mdl-radio__button" name="C1" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C1_2">
+  <input type="radio" id="C1_2" class="mdl-radio__button" name="C1" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C1_3">
+  <input type="radio" id="C1_3" class="mdl-radio__button" name="C1" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C1_4">
+  <input type="radio" id="C1_4" class="mdl-radio__button" name="C1" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C1_5">
+  <input type="radio" id="C1_5" class="mdl-radio__button" name="C1" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C1_6">
+  <input type="radio" id="C1_6" class="mdl-radio__button" name="C1" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_2</i>  I feel full of energy.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C2_0">
+  <input type="radio" id="C2_0" class="mdl-radio__button" name="C2" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C2_1">
+  <input type="radio" id="C2_1" class="mdl-radio__button" name="C2" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C2_2">
+  <input type="radio" id="C2_2" class="mdl-radio__button" name="C2" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C2_3">
+  <input type="radio" id="C2_3" class="mdl-radio__button" name="C2" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C2_4">
+  <input type="radio" id="C2_4" class="mdl-radio__button" name="C2" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C2_5">
+  <input type="radio" id="C2_5" class="mdl-radio__button" name="C2" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C2_6">
+  <input type="radio" id="C2_6" class="mdl-radio__button" name="C2" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_3</i>  I am easily able to understand what my patients/clients feel.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C3_0">
+  <input type="radio" id="C3_0" class="mdl-radio__button" name="C3" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C3_1">
+  <input type="radio" id="C3_1" class="mdl-radio__button" name="C3" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C3_2">
+  <input type="radio" id="C3_2" class="mdl-radio__button" name="C3" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C3_3">
+  <input type="radio" id="C3_3" class="mdl-radio__button" name="C3" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C3_4">
+  <input type="radio" id="C3_4" class="mdl-radio__button" name="C3" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C3_5">
+  <input type="radio" id="C3_5" class="mdl-radio__button" name="C3" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C3_6">
+  <input type="radio" id="C3_6" class="mdl-radio__button" name="C3" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_4</i>  I look after my patients'/clients' problems very effectively.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C4_0">
+  <input type="radio" id="C4_0" class="mdl-radio__button" name="C4" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C4_1">
+  <input type="radio" id="C4_1" class="mdl-radio__button" name="C4" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C4_2">
+  <input type="radio" id="C4_2" class="mdl-radio__button" name="C4" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C4_3">
+  <input type="radio" id="C4_3" class="mdl-radio__button" name="C4" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C4_4">
+  <input type="radio" id="C4_4" class="mdl-radio__button" name="C4" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C4_5">
+  <input type="radio" id="C4_5" class="mdl-radio__button" name="C4" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C4_6">
+  <input type="radio" id="C4_6" class="mdl-radio__button" name="C4" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_5</i>  In my work, I handle emotional problems very calmly.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C5_0">
+  <input type="radio" id="C5_0" class="mdl-radio__button" name="C5" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C5_1">
+  <input type="radio" id="C5_1" class="mdl-radio__button" name="C5" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C5_2">
+  <input type="radio" id="C5_2" class="mdl-radio__button" name="C5" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C5_3">
+  <input type="radio" id="C5_3" class="mdl-radio__button" name="C5" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C5_4">
+  <input type="radio" id="C5_4" class="mdl-radio__button" name="C5" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C5_5">
+  <input type="radio" id="C5_5" class="mdl-radio__button" name="C5" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C5_6">
+  <input type="radio" id="C5_6" class="mdl-radio__button" name="C5" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_6</i>  Through my work, I feel that I have a positive influence on people.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C6_0">
+  <input type="radio" id="C6_0" class="mdl-radio__button" name="C6" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C6_1">
+  <input type="radio" id="C6_1" class="mdl-radio__button" name="C6" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C6_2">
+  <input type="radio" id="C6_2" class="mdl-radio__button" name="C6" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C6_3">
+  <input type="radio" id="C6_3" class="mdl-radio__button" name="C6" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C6_4">
+  <input type="radio" id="C6_4" class="mdl-radio__button" name="C6" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C6_5">
+  <input type="radio" id="C6_5" class="mdl-radio__button" name="C6" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C6_6">
+  <input type="radio" id="C6_6" class="mdl-radio__button" name="C6" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_7</i>  I am easily able to create a relaxed atmosphere with my patients/clients.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C7_0">
+  <input type="radio" id="C7_0" class="mdl-radio__button" name="C7" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C7_1">
+  <input type="radio" id="C7_1" class="mdl-radio__button" name="C7" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C7_2">
+  <input type="radio" id="C7_2" class="mdl-radio__button" name="C7" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C7_3">
+  <input type="radio" id="C7_3" class="mdl-radio__button" name="C7" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C7_4">
+  <input type="radio" id="C7_4" class="mdl-radio__button" name="C7" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C7_5">
+  <input type="radio" id="C7_5" class="mdl-radio__button" name="C7" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C7_6">
+  <input type="radio" id="C7_6" class="mdl-radio__button" name="C7" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                    <h4><i class="material-icons">filter_8</i>  I feel refreshed when I have been close to my patients/clients at work.</h4>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C8_0">
+  <input type="radio" id="C8_0" class="mdl-radio__button" name="C8" value="0">
+  <span class="mdl-radio__label">Never</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C8_1">
+  <input type="radio" id="C8_1" class="mdl-radio__button" name="C8" value="1">
+  <span class="mdl-radio__label">A few times per year</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C8_2">
+  <input type="radio" id="C8_2" class="mdl-radio__button" name="C8" value="2">
+  <span class="mdl-radio__label">Once a month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C8_3">
+  <input type="radio" id="C8_3" class="mdl-radio__button" name="C8" value="3">
+  <span class="mdl-radio__label">A few times per month</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C8_4">
+  <input type="radio" id="C8_4" class="mdl-radio__button" name="C8" value="4">
+  <span class="mdl-radio__label">Once a week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C8_5">
+  <input type="radio" id="C8_5" class="mdl-radio__button" name="C8" value="5">
+  <span class="mdl-radio__label">A few times per week</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="C8_6">
+  <input type="radio" id="C8_6" class="mdl-radio__button" name="C8" value="6">
+  <span class="mdl-radio__label">Every day</span>
+</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RESULT -->
+        <section class=" mdl-layout__tab-panel" id="result">
+          <div class="page-content">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet cell-center">
+                <div class="form mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Results</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <div class="section">
+                      <h4><i class="material-icons">gavel</i>  Section A: Burnout</h4>
+                      <p>
+                        Burnout (or depressive anxiety syndrome): Testifies to fatigue at the very idea of work, chronic fatigue, trouble sleeping, physical problems. For the MBI, as well as for most authors, "exhaustion would be the key component of the syndrome." Unlike depression, the problems disappear outside work.
+                      </p>
+                      <div class="result-card mdl-card mdl-shadow--6dp hidden" id="resultA-card">
+                        <div class="mdl-card__title mdl-card--expand">
+                          <span id="resultA"></span>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Result
+                          </a>
+                          <div class="mdl-layout-spacer"></div>
+                          <i class="material-icons">gavel</i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section">
+                      <h4><i class="material-icons">person_outline</i>  Section B: Depersonalization</h4>
+                      <p>
+                        "Depersonalization" (or loss of empathy): Rather a "dehumanization" in interpersonal relations. The notion of detachment is excessive, leading to cynicism with negative attitudes with regard to patients or colleagues, feeling of guilt, avoidance of social contacts and withdrawing into oneself. The professional blocks the empathy he can show to his patients and/or colleagues.
+                      </p>
+                      <div class="result-card mdl-card mdl-shadow--6dp hidden" id="resultB-card">
+                        <div class="mdl-card__title mdl-card--expand">
+                          <span id="resultB"></span>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Result
+                          </a>
+                          <div class="mdl-layout-spacer"></div>
+                          <i class="material-icons">person_outline</i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section">
+                      <h4><i class="material-icons">star</i>  Section C: Personal Achievement</h4>
+                      <p>
+                        The reduction of personal achievement: The individual assesses himself negatively, feels he is unable to move the situation forward. This component represents the demotivating effects of a difficult, repetitive situation leading to failure despite efforts. The person begins to doubt his genuine abilities to accomplish things. This aspect is a consequence of the first two.
+                      </p>
+                      <div class="result-card mdl-card mdl-shadow--6dp hidden" id="resultC-card">
+                        <div class="mdl-card__title mdl-card--expand">
+                          <span id="resultC"></span>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Result
+                          </a>
+                          <div class="mdl-layout-spacer"></div>
+                          <i class="material-icons">star</i>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="calculate">
+                      Calculate
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo"><span class="app-title"></span></div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="#"><span class="app-copyright"></span></a></li>
+            <li><a href="#"><span class="app-license"></span></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+</html>
