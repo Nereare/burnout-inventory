@@ -1,6 +1,10 @@
 # Burnout Inventory
 
+![Archived as of 2019-08-12](https://img.shields.io/badge/Archived-2019--08--12-lightgrey)
+
 Based upon Maslach Burnout Inventory (MBI), this project aims on making the questionnaire easier to answer, and to get the results without the cumbersomeness of adding up several scores.
+
+This repository was archived as of August 12, 2019.
 
 ## Installation
 
